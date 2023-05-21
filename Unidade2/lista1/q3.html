@@ -1,0 +1,25 @@
+<!-- Escreva um programa que calcule a área de um triângulo. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unidade 2 - Questão 3</title>
+    </head>
+    <body>
+        <label for="inp1">Base</label>
+        <input type="number" name="inp1" id="inp1">
+        <br>
+        <label for="inp2">Altura</label>
+        <input type="number" name="inp2" id="inp2">
+        <br>
+        <input type="button" value="imprimir" onclick="imprimir()">
+    <script>
+        function imprimir(){
+            let base = parseFloat(Number(document.getElementById('inp1').value)).toFixed(2);
+            let altura = parseFloat(Number(document.getElementById('inp2').value)).toFixed(2);
+            let area = base*altura/2;
+            console.log('Área: '+area);
+        }
+    </script>    
+    </body>
+</html>

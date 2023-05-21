@@ -1,0 +1,25 @@
+<!-- Escreva um programa que receba dois números reais, calcule a média aritmética entre os números e imprima o resultado. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unidade 2 - Questão 2</title>
+    </head>
+    <body>
+        <label for="inp1">Número1</label>
+        <input type="number" name="inp1" id="inp1">
+        <br>
+        <label for="inp2">Número2</label>
+        <input type="number" name="inp2" id="inp2">
+        <br>
+        <input type="button" value="imprimir" onclick="imprimir()">
+    <script>
+        function imprimir(){
+            let num1 = parseFloat(Number(document.getElementById('inp1').value)).toFixed(2);
+            let num2 = parseFloat(Number(document.getElementById('inp2').value)).toFixed(2);
+            let media = (Number(num1)+Number(num2))/2;
+            console.log('Média: '+media);
+        }
+    </script>    
+    </body>
+</html>
