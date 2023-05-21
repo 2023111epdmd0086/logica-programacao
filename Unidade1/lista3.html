@@ -1,0 +1,48 @@
+<!-- REFERENTE QUESTÃO 3 DA LISTA DE EXERCÍCIOS -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios 3</title>
+</head>
+
+<body>
+    Valor da compra<input type="number" name="inp1" id="inp1">
+    <br>
+    Qtd de parcelas<input type="number" name="inp2" id="inp2">
+    <input type="button" value="Calcular parcelas" onclick="calcular()">
+    <script>
+        function calcularParcelas(valorCompra, numParcelas) {
+            const valorParcela = Math.floor(valorCompra / numParcelas); // Valor inteiro das parcelas
+            const resto = valorCompra % numParcelas; // Resto da divisão
+            const parcelas = []; // Array para armazenar os valores das parcelas
+
+            // Distribui o resto igualmente entre as parcelas iniciais
+            for (let i = 0; i < numParcelas; i++) {
+                if (i < resto) {
+                    parcelas.push(valorParcela + 1);
+                } else {
+                    parcelas.push(valorParcela);
+                }
+            }
+
+            return parcelas;
+        }
+        function calcular() {
+            const valorCompra = Number(document.getElementById('inp1').value);
+            const numParcelas = Number(document.getElementById('inp2').value);
+
+            const valoresParcelas = calcularParcelas(valorCompra, numParcelas);
+            console.log(
+                'Valores das parcelas da compra de: '
+                + valorCompra + ' R$ em '
+                + numParcelas + ' parcelas: '
+                + valoresParcelas);
+        }
+
+    </script>
+</body>
+
+</html>

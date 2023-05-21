@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lista de Exercícios 2</title>
+</head>
+<body>
+	<label for="inp1">Numero</label>
+	<input type="number" name="inp1" id="inp1">
+	<br>
+	<input type="submit" value="imprimir" name="" onclick="imprimir()">
+	<script type="text/javascript">
+		function imprimir() {
+			var numero = parseInt(document.getElementById('inp1').value);
+			var last = numero%10;
+			var first = parseInt(numero/1000);
+			
+			console.log("Primeiro dígito: "+ first);
+			console.log("Último dígito: "+ last);
+		}
+	</script>
+</body>
+</html>
