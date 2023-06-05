@@ -5,7 +5,8 @@ let somaPar = 0;
 let somaImpar = 0;
 for (i = 0; i<10 ; i++) {
     num[i] = parseFloat(prompt('Digite o número '+(i+1)));
-    if(num[i]%2 ==0? somaPar +=num[i]:somaImpar+=num[i]);
+    // se for um número float, iremos calcular se é par ou não
+    if(Math.floor(num[i])%2 ==0? somaPar +=num[i]:somaImpar+=num[i]);
 }
 console.log('----------VALORES INSERIDOS----------\n\n'+num);
 
