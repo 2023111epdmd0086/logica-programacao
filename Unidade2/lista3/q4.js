@@ -1,4 +1,4 @@
-//      aça um programa que mostre a seguinte saída: (Utilize o método substr())
+// Faça um programa que mostre a seguinte saída: (Utilize o método substr())
 // I
 // If
 // Ifp

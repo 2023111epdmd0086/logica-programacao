@@ -3,8 +3,11 @@
 let notas = [];
 
 for (let i = 0; i<10; i++) {
-    notas[i] = parseInt(prompt('Digite a nota '+(i+1)));
+    let nota = parseInt(prompt('Digite a nota '+(i+1)));
+    notas.push(nota);
 }
+console.log('Notas:\n'+notas);
+console.log('Notas que passaram:\n');
 for (let i = 0; i < notas.length; i++) {
     if (notas[i] >5) {
         console.log(notas[i]);

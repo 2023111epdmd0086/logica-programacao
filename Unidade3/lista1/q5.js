@@ -8,5 +8,6 @@ for (let i=0; i<3; i++) {
 
 }
 
+console.log('Números originais: '+numeros);
 console.log('Números invertidos');
 console.log(numeros.reverse()); // Inverter a sequência dos números no array

@@ -11,7 +11,7 @@ for (let i = 0; i < 5; i++) {
   nomes.push(nome);
   notas.push(nota);
 }
-
+console.log('Todas notas:\n'+nomes+'\n'+notas);
 // Loop para exibir os nomes dos alunos com nota maior que 5.0
 console.log("Alunos com nota maior que 5.0:");
 for (let i = 0; i < 5; i++) {

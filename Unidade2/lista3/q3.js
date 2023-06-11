@@ -4,4 +4,4 @@ let txtMai = prompt('Digite um texto em letras MAIÚSCULAS');
 let txtMin = prompt('Digite um texto em letras MINÚSCULAS');
 
 console.log('Texto 1 em minusculo:\n'+txtMai.toLowerCase());
-console.log('Texto 2 em maiúsculo:\n'+txtMai.toUpperCase());
+console.log('Texto 2 em maiúsculo:\n'+txtMin.toUpperCase());
